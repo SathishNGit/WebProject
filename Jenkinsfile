@@ -5,19 +5,14 @@ pipeline {
       parallel {
         stage('Stage1') {
           steps {
-            echo 'HelloPipeline1'
+            echo 'Build Assets'
           }
         }
         stage('Stage2') {
           steps {
-            echo 'Hello From Stage2'
+            echo 'Test'
           }
         }
-      }
-    }
-    stage('Stage3') {
-      steps {
-        sleep 1
       }
     }
   }
