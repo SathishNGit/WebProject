@@ -10,7 +10,7 @@ pipeline {
         }
         stage('Stage2') {
           steps {
-            build(job: 'HelloWorld', quietPeriod: 2)
+            echo 'Hello From Stage2'
           }
         }
       }
